@@ -22,8 +22,8 @@ The server listens on **port 3000** and implements authentication and request tr
 ---
 
 ## **Programmers**  
-👨‍💻 **Stephanos Khoury**  
-👩‍💻 **Rula Yosef**  
+ **Stephanos Khoury**  
+ **Rula Yosef**  
 
 ---
 
@@ -87,65 +87,29 @@ app.listen(PORT, () => {
 ## **Example Output**  
 
 ### **Visiting the Home Page (`/`)**  
-📌 **URL:** `http://localhost:3000/`  
-📌 **Response:**  
+ **URL:** `http://localhost:3000/`  
+ **Response:**  
 ```sh
 Welcome to the homepage!
 ```
 
 ### **Visiting the Public Page (`/public`)**  
-📌 **URL:** `http://localhost:3000/public`  
-📌 **Response:**  
+ **URL:** `http://localhost:3000/public`  
+ **Response:**  
 ```sh
 This is a public page.
 ```
 
 ### **Visiting the Admin Page Without Authorization (`/admin`)**  
-📌 **URL:** `http://localhost:3000/admin`  
-📌 **Response:**  
+ **URL:** `http://localhost:3000/admin`  
+ **Response:**  
 ```json
 {"message": "Access Denied"}
 ```
 
 ### **Visiting the Admin Page With Authorization (`/admin?user=admin`)**  
-📌 **URL:** `http://localhost:3000/admin?user=admin`  
-📌 **Response:**  
+ **URL:** `http://localhost:3000/admin?user=admin`  
+ **Response:**  
 ```sh
 Welcome to the admin page!
 ```
-
----
-
-## **Installation Instructions**
-### **1️⃣ Install Node.js**
-Make sure **Node.js** is installed. You can check by running:
-```sh
-node -v
-```
-
-### **2️⃣ Initialize a Node.js Project**
-Run:
-```sh
-npm init -y
-```
-This creates a **`package.json`** file.
-
-### **3️⃣ Install Express**
-Run:
-```sh
-npm install express
-```
-
-### **4️⃣ Start the Server**
-Run:
-```sh
-node server.js
-```
-Now, the server is up and running on **http://localhost:3000** 🚀
-
----
-
-## **License**  
-📝 MIT License - Feel free to modify and use as needed.  
-
----
